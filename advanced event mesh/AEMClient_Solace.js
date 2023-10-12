@@ -3,7 +3,7 @@ const assert = require('assert')
 const solace = require('solclientjs')
 
 module.exports = class SolaceClient {
-    constructor(useJSON = true) {
+    constructor() {
         this.connectionInfo = cds.env.requires.SAPAEM.credentials
         this.session = null
 
